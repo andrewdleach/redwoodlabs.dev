@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-ui3-vue",
+  "name": "redwood-labs-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "3.0.0-alpha.10",
+    "simple-icons": "^13.5.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
@@ -19,5 +20,5 @@
     "vite": "^6.0.7",
     "vue-tsc": "^2.2.0"
   },
-  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+  "packageManager": "pnpm@8.15.6"
 }
