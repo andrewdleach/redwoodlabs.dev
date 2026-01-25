@@ -13,29 +13,20 @@
               <span class="text-primary-500">Drive Results</span>
             </h1>
             <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              I specialize in transforming complex legacy systems into modern, performant architectures. 
+              I'm Andrew Leach, a Senior Software Engineer specializing in transforming complex legacy systems into modern, performant architectures. 
               From API optimization achieving 50%+ latency reduction to cloud migrations serving 20+ services, 
               I deliver measurable improvements that scale.
             </p>
             <div class="flex flex-wrap gap-4">
-              <UButton 
-                size="xl" 
-                color="primary"
-                icon="i-heroicons-envelope"
-                @click="scrollToContact"
-              >
-                Let's Talk
-              </UButton>
-              <UButton 
-                size="xl" 
-                color="neutral" 
-                variant="ghost"
-                icon="i-heroicons-document-text"
-                to="https://www.linkedin.com/in/redwoodlabs"
+              <a 
+                href="https://www.linkedin.com/in/redwoodlabs"
                 target="_blank"
+                rel="noopener noreferrer"
+                class="px-6 py-3 text-lg font-semibold rounded-md bg-neutral-200 dark:bg-neutral-800 text-neutral-900 dark:text-white hover:bg-neutral-300 dark:hover:bg-neutral-700 transition-colors inline-flex items-center gap-2"
               >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.553-1.553-2.553-1.554 0-1.792 1.214-1.792 2.467v3.685h-2.633V9h2.52v1.207h.035c.35-.665 1.205-1.366 2.48-1.366 2.653 0 3.14 1.744 3.14 4.018v4.82zM4.004 7.574a1.325 1.325 0 11-.002-2.65 1.325 1.325 0 01.002 2.65zm1.12 9.374H2.884V9h2.24v7.974zM17.54 2H2.458C1.348 2 .5 2.852.5 3.965v12.07C.5 17.148 1.348 18 2.456 18h15.082c1.113 0 2.02-.852 2.02-1.965V3.965C19.5 2.852 18.652 2 17.54 2z"/></svg>
                 View LinkedIn
-              </UButton>
+              </a>
             </div>
           </div>
           
@@ -181,29 +172,20 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <UButton 
-                size="xl" 
-                color="primary"
-                icon="i-heroicons-envelope"
-                :to="`mailto:${email}`"
-              >
-                Send Email
-              </UButton>
-              <UButton 
-                size="xl" 
-                color="secondary"
-                variant="outline"
-                icon="i-simple-icons-linkedin"
-                to="https://www.linkedin.com/in/redwoodlabs"
+              <a 
+                href="https://www.linkedin.com/in/redwoodlabs"
                 target="_blank"
+                rel="noopener noreferrer"
+                class="px-6 py-3 text-lg font-semibold rounded-md border-2 border-purple-500 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950 transition-colors inline-flex items-center gap-2"
               >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.553-1.553-2.553-1.554 0-1.792 1.214-1.792 2.467v3.685h-2.633V9h2.52v1.207h.035c.35-.665 1.205-1.366 2.48-1.366 2.653 0 3.14 1.744 3.14 4.018v4.82zM4.004 7.574a1.325 1.325 0 11-.002-2.65 1.325 1.325 0 01.002 2.65zm1.12 9.374H2.884V9h2.24v7.974zM17.54 2H2.458C1.348 2 .5 2.852.5 3.965v12.07C.5 17.148 1.348 18 2.456 18h15.082c1.113 0 2.02-.852 2.02-1.965V3.965C19.5 2.852 18.652 2 17.54 2z"/></svg>
                 Connect on LinkedIn
-              </UButton>
+              </a>
             </div>
 
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
               <p class="text-sm text-gray-500 dark:text-gray-400">
-                Based in Greater Seattle Area • Open to remote consulting opportunities
+                Based in Greater Seattle Area
               </p>
             </div>
           </div>
@@ -352,9 +334,6 @@ const techStack = [
     items: ['Docker', 'Git', 'CI/CD', 'REST APIs', 'Supabase']
   }
 ]
-
-// Contact info (obfuscated to prevent scraping)
-const email = computed(() => 'andy' + '.redwoodlabs' + '.dev' + '@' + 'gmail.com')
 
 // Current year for footer
 const currentYear = computed(() => new Date().getFullYear())

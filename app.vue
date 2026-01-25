@@ -203,24 +203,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-useHead({
-  title: 'Andrew Leach - Senior Software Engineer',
-  meta: [
-    {
-      name: 'description',
-      content: 'Senior Software Engineer specializing in transforming legacy systems into modern architectures. API optimization, microservices migration, cloud architecture.'
-    },
-    {
-      name: 'og:title',
-      content: 'Andrew Leach - Senior Software Engineer'
-    },
-    {
-      name: 'og:description',
-      content: 'Senior Software Engineer specializing in transforming legacy systems into modern architectures.'
-    }
-  ]
-})
-
 // Stats
 const stats = [
   { value: '50%+', label: 'Latency Reduction' },
