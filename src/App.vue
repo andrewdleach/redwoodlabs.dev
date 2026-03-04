@@ -18,7 +18,7 @@
               I deliver measurable improvements that scale.
             </p>
             <div class="flex flex-wrap gap-4">
-              <a 
+              <a
                 href="https://www.linkedin.com/in/redwoodlabs"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -26,6 +26,15 @@
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.553-1.553-2.553-1.554 0-1.792 1.214-1.792 2.467v3.685h-2.633V9h2.52v1.207h.035c.35-.665 1.205-1.366 2.48-1.366 2.653 0 3.14 1.744 3.14 4.018v4.82zM4.004 7.574a1.325 1.325 0 11-.002-2.65 1.325 1.325 0 01.002 2.65zm1.12 9.374H2.884V9h2.24v7.974zM17.54 2H2.458C1.348 2 .5 2.852.5 3.965v12.07C.5 17.148 1.348 18 2.456 18h15.082c1.113 0 2.02-.852 2.02-1.965V3.965C19.5 2.852 18.652 2 17.54 2z"/></svg>
                 View LinkedIn
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-6 py-3 text-lg font-semibold rounded-md bg-primary-500 text-white hover:bg-primary-600 transition-colors inline-flex items-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                View Resume
               </a>
             </div>
           </div>
@@ -172,7 +181,7 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
+              <a
                 href="https://www.linkedin.com/in/redwoodlabs"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -180,6 +189,15 @@
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.553-1.553-2.553-1.554 0-1.792 1.214-1.792 2.467v3.685h-2.633V9h2.52v1.207h.035c.35-.665 1.205-1.366 2.48-1.366 2.653 0 3.14 1.744 3.14 4.018v4.82zM4.004 7.574a1.325 1.325 0 11-.002-2.65 1.325 1.325 0 01.002 2.65zm1.12 9.374H2.884V9h2.24v7.974zM17.54 2H2.458C1.348 2 .5 2.852.5 3.965v12.07C.5 17.148 1.348 18 2.456 18h15.082c1.113 0 2.02-.852 2.02-1.965V3.965C19.5 2.852 18.652 2 17.54 2z"/></svg>
                 Connect on LinkedIn
+              </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-6 py-3 text-lg font-semibold rounded-md bg-primary-500 text-white hover:bg-primary-600 transition-colors inline-flex items-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                View Resume
               </a>
             </div>
 
