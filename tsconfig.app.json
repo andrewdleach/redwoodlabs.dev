@@ -27,7 +27,6 @@
       "src/**/*.tsx",
       "src/**/*.vue",
       "auto-imports.d.ts",
-      "components.d.ts",
-      "nuxt.config.ts"
+      "components.d.ts"
     ]
   }
