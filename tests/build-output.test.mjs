@@ -40,3 +40,16 @@ test('seo: sitemap lists only the homepage', () => {
   const locs = [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
   assert.deepEqual(locs, ['https://www.redwoodlabs.dev/'])
 })
+
+test('baseline: no project page without body', () => {
+  assert.equal(existsSync(new URL('projects/family-connect/index.html', OUT)), false)
+})
+
+test('baseline: no blog while there are no posts', () => {
+  assert.equal(existsSync(new URL('blog/index.html', OUT)), false)
+  assert.doesNotMatch(home(), /href="\/blog"/)
+})
+
+test('baseline: project card links to the live site', () => {
+  assert.match(home(), /href="https:\/\/familyconnect\.dev"/)
+})

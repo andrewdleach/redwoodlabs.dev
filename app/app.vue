@@ -27,7 +27,7 @@ useSchemaOrg([
     url: absolute('/'),
     image: absolute(profile.image),
     jobTitle: profile.jobTitle,
-    worksFor: { '@type': 'Organization', name: profile.jobs[0].company },
+    worksFor: { '@type': 'Organization', name: profile.jobs[0]?.company },
     address: {
       '@type': 'PostalAddress',
       addressLocality: profile.location.city,

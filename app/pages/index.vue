@@ -18,6 +18,7 @@
         >
           {{ link.label }} ↗
         </a>
+        <NuxtLink v-if="postCount" to="/blog" :class="pill">Blog</NuxtLink>
       </nav>
     </header>
 
@@ -29,8 +30,8 @@
         <NuxtLink
           v-for="project in projects"
           :key="project.path"
-          :to="project.url"
-          target="_blank"
+          :to="hasBody(project) ? project.path : project.url"
+          :target="hasBody(project) ? undefined : '_blank'"
           class="group block rounded-xl border border-gray-200 p-5 transition-colors hover:border-purple-500 dark:border-gray-800 dark:hover:border-purple-400"
         >
           <div class="flex items-center justify-between gap-3">
@@ -45,7 +46,7 @@
             {{ project.tagline }}
           </p>
           <p class="mt-3 text-sm font-medium text-purple-600 dark:text-purple-400">
-            {{ project.url.replace('https://', '') }} ↗
+            {{ hasBody(project) ? 'Read more →' : `${project.url.replace('https://', '')} ↗` }}
           </p>
         </NuxtLink>
       </div>
@@ -87,6 +88,8 @@ useSeoMeta({
 })
 
 const pill = 'inline-flex min-h-11 items-center rounded-full border border-gray-200 px-4 text-purple-600 transition-colors hover:border-purple-500 dark:border-gray-800 dark:text-purple-400 dark:hover:border-purple-400'
+
+const { data: postCount } = await useAsyncData('blog-count', () => publishedPosts().count())
 
 const { data: projects } = await useAsyncData('projects', () =>
   queryCollection('projects').order('order', 'ASC').all(),
