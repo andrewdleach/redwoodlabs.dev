@@ -24,7 +24,8 @@
   "devDependencies": {
     "@types/node": "22",
     "typescript": "^5.9.3",
-    "vue-tsc": "^2.2.12"
+    "vue-tsc": "^2.2.12",
+    "yaml": "^2.9.1"
   },
   "packageManager": "pnpm@8.15.6"
 }
