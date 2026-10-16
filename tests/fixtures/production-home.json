@@ -1,0 +1,35 @@
+{
+  "head": {
+    "title": "Andrew Leach - Senior Software Engineer",
+    "description": "Andrew Leach, Senior Software Engineer in Seattle. Backend systems by day, small useful products on the side.",
+    "canonical": "https://www.redwoodlabs.dev/",
+    "og": {
+      "title": "Andrew Leach - Senior Software Engineer",
+      "description": "Andrew Leach, Senior Software Engineer in Seattle. Backend systems by day, small useful products on the side.",
+      "type": "website",
+      "url": "https://www.redwoodlabs.dev/",
+      "image": "https://www.redwoodlabs.dev/profile-picture.jpeg"
+    },
+    "twitter": {
+      "card": "summary",
+      "title": "Andrew Leach - Senior Software Engineer",
+      "description": "Andrew Leach, Senior Software Engineer in Seattle. Backend systems by day, small useful products on the side."
+    },
+    "person": {
+      "name": "Andrew Leach",
+      "url": "https://www.redwoodlabs.dev/",
+      "image": "https://www.redwoodlabs.dev/profile-picture.jpeg",
+      "jobTitle": "Senior Software Engineer",
+      "worksFor": "Credit Acceptance",
+      "address": {
+        "locality": "Seattle",
+        "region": "WA",
+        "country": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/redwoodlabs"
+      ]
+    }
+  },
+  "text": "Andrew Leach Senior Software Engineer · Seattle I build backend systems by day and small, useful products on the side. LinkedIn ↗ Resume ↗ Projects Family Connect Building Keep your whole family in the loop — no app required. familyconnect.dev ↗ Work Credit Acceptance Senior Software Engineer · 2025–present Praia Health Senior Software Engineer · 2023–2025 REI Lead Software Engineer · 2020–2022 © 2026 Redwood Labs"
+}
