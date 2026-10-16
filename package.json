@@ -4,22 +4,26 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite-ssg build",
-    "preview": "vite preview"
+    "dev": "nuxt dev",
+    "build": "nuxt generate",
+    "preview": "npx serve .output/public",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "test": "nuxt generate && node --test tests/"
   },
   "dependencies": {
-    "@nuxt/ui": "3.0.0-alpha.10",
-    "simple-icons": "^13.5.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@nuxt/content": "^3.16.2",
+    "@nuxt/ui": "^4.12.0",
+    "@nuxtjs/robots": "^7.0.2",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "nuxt": "^4.6.2",
+    "nuxt-schema-org": "^7.0.1",
+    "vue": "^3.5.44",
+    "zod": "^4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.7",
-    "vite-ssg": "^28.3.0",
-    "vue-tsc": "^2.2.0"
+    "typescript": "^5.9.3",
+    "vue-tsc": "^2.2.12"
   },
   "packageManager": "pnpm@8.15.6"
 }
