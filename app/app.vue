@@ -13,4 +13,28 @@
 
 <script setup lang="ts">
 const currentYear = new Date().getFullYear()
+const route = useRoute()
+const site = useSiteConfig()
+const absolute = (path: string) => new URL(path, site.url + '/').href
+
+useHead({
+  link: [{ rel: 'canonical', href: () => absolute(route.path) }],
+})
+
+useSchemaOrg([
+  definePerson({
+    name: profile.name,
+    url: absolute('/'),
+    image: absolute(profile.image),
+    jobTitle: profile.jobTitle,
+    worksFor: { '@type': 'Organization', name: profile.jobs[0].company },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: profile.location.city,
+      addressRegion: profile.location.region,
+      addressCountry: profile.location.country,
+    },
+    sameAs: [profile.linkedin],
+  }),
+])
 </script>

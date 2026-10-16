@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-schema-org'],
   css: ['~/assets/css/main.css'],
   app: { head: { htmlAttrs: { lang: 'en' } } },
-  site: { url: 'https://www.redwoodlabs.dev', name: 'Andrew Leach' },
+  site: {
+    url: 'https://www.redwoodlabs.dev',
+    name: 'Andrew Leach',
+    indexable: process.env.VERCEL_ENV ? process.env.VERCEL_ENV === 'production' : true,
+  },
   content: { experimental: { sqliteConnector: 'native' } },
   nitro: { prerender: { crawlLinks: true, routes: ['/'] } },
 })

@@ -70,6 +70,22 @@
 </template>
 
 <script setup lang="ts">
+const site = useSiteConfig()
+const title = `${profile.name} - ${profile.jobTitle}`
+
+useSeoMeta({
+  title,
+  description: profile.description,
+  ogTitle: title,
+  ogDescription: profile.description,
+  ogType: 'website',
+  ogUrl: `${site.url}/`,
+  ogImage: `${site.url}${profile.image}`,
+  twitterCard: 'summary',
+  twitterTitle: title,
+  twitterDescription: profile.description,
+})
+
 const pill = 'inline-flex min-h-11 items-center rounded-full border border-gray-200 px-4 text-purple-600 transition-colors hover:border-purple-500 dark:border-gray-800 dark:text-purple-400 dark:hover:border-purple-400'
 
 const { data: projects } = await useAsyncData('projects', () =>

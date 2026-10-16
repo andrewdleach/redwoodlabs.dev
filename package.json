@@ -9,7 +9,7 @@
     "preview": "npx serve .output/public",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
-    "test": "nuxt generate && node --test tests/"
+    "test": "nuxt generate && node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.16.2",
